@@ -14,11 +14,15 @@ app.all('*', function(req, res) {
     console.log("\nRequest body - to string:");
     console.log(String(req.body))
     console.log("=======================\n");
-    res.send("ok\n");
+    // res.status(200).send('');  --> used in image tag send200
+    // res.status(201).send('');  --> used in image tag send201
+    res.status(202).send('');   // --> used in image tag send202 and latest
+
 });
 
 
 app.listen(8080, () => {
-    console.debug('App listening on :8080');
+    console.log('https://github.com/aliok/request-logger');
+    console.log('App listening on :8080');
 });
 

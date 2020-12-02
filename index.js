@@ -18,7 +18,7 @@ app.all('*', function(req, res) {
 });
 
 
-app.listen(3000, () => {
-    console.debug('App listening on :3000');
+app.listen(8080, () => {
+    console.debug('App listening on :8080');
 });
 
